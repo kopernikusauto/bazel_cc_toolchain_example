@@ -1,0 +1,24 @@
+#!/bin/bash
+
+tool_prefix=external/toolchain_x86_64/bin/x86_64-unknown-linux-gnu
+gcc=${tool_prefix}-gcc
+
+if [[ -f ${gcc} ]]; then
+    ${gcc} "$@"
+elif [[ "${BASH_SOURCE[0]}" == "/"* ]]; then
+    # Some consumers of `CcToolchainConfigInfo` (e.g. `cmake` from rules_foreign_cc)
+    # change CWD and call this script with its absolute path.
+    # For cases like this, we'll try to find the tool relative to this script.
+    # This script is in _execroot_/avp/config/toolchains/x86_64/wrappers/
+    # Target is in _execroot_/avp/external/toolchain_x86_64/bin/
+    execroot_path="${BASH_SOURCE[0]%/*/*/*/*/*}"
+    gcc="${execroot_path}/${gcc}"
+    "${gcc}" "${@}"
+else
+    >&2 echo "ERROR: Could not find ${gcc}!"
+    >&2 echo "ERROR: PWD=\"$(pwd)\""
+    >&2 echo "ERROR: PATH=\"${PATH}\""
+    >&2 echo "ERROR: BASH_SOURCE=\"${BASH_SOURCE[0]}\""
+    >&2 echo "ERROR: execroot_path=\"${BASH_SOURCE[0]%/*/*/*/*/*}\""
+    exit 5
+fi

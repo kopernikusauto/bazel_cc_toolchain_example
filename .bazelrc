@@ -1,0 +1,39 @@
+#build --action_env=BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1
+
+build --build_metadata=REPO_URL=https://dev.azure.com/kopernikusauto/AVP/_git/avp-workspace
+
+#####################################################################
+# Enforce strict checks.
+build --incompatible_force_strict_header_check_from_starlark
+build --strict_filesets
+build --strict_system_includes
+build --incompatible_strict_action_env
+
+#####################################################################
+# Enforce strict checks of deprecated toolchain api.
+build --incompatible_require_linker_input_cc_api
+
+#####################################################################
+# Use new cc toolchain resolution api
+build --incompatible_enable_cc_toolchain_resolution
+
+#####################################################################
+# Prevent invalid caching if input files are modified during a build.
+build --experimental_guard_against_concurrent_changes
+
+
+#####################################################################
+# Build Buddy
+
+build:bb --bes_results_url=https://app.buildbuddy.io/invocation/
+build:bb --bes_backend=grpcs://remote.buildbuddy.io
+build:bb --remote_cache=grpcs://remote.buildbuddy.io
+build:bb --remote_timeout=120
+
+build:cached --config=bb --noremote_upload_local_results
+
+build:remote --config=bb --remote_executor=grpcs://remote.buildbuddy.io --jobs=50
+
+build:remote_cached --config=cached
+build:remote_cached --remote_executor=grpcs://remote.buildbuddy.io --jobs=50
+
