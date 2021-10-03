@@ -1,4 +1,14 @@
 
+# Fixed by correcting linker args
+
+I was using `-l:libstdc++.a` which apparently works in most cases.
+
+I replaced that with `-Bstatic -lstdc++ -Bdynamic`.
+
+
+## Original problem statement
+
+
 This repo illustrates a simple custom toolchain config... with a problem:
 
 - It's possible to link and run C++ libraries and programs.
