@@ -114,12 +114,12 @@ cc_toolchain_config(
         "-fuse-ld=bfd",
         "-Wl,-no-as-needed",
         "-Wl,-z,relro,-z,now",
-        "-B{}/{}/bin".format(TOOLCHAIN_ROOT, TARGET_TUPLE),
         "-pass-exit-codes",
-        "-L{}/{}/lib64".format(TOOLCHAIN_ROOT, TARGET_TUPLE),
     ],
     link_libs = [
-        "-l:libstdc++.a",
+        "-Bstatic",
+        "-lstdc++",
+        "-Bdynamic",
         "-lm"
     ],
     opt_link_flags = ["-Wl,--gc-sections"],
