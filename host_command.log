@@ -1,0 +1,94 @@
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 4 targets (1 packages loaded, 0 targets configured)
+INFO: Analyzed 4 targets (30 packages loaded, 1451 targets configured).
+INFO: Found 4 targets...
+[0 / 12] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+SUBCOMMAND: # //build/toolchains/compilation_tests:hello_lib [action 'Compiling build/toolchains/compilation_tests/hello_lib.cc', configuration: fdf5b52dcec645a88a1ca5ac3b099921e9a82b373c7c33cb77426f4366a12bdc, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer '-std=c++0x' -MD -MF bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello_lib/hello_lib.pic.d '-frandom-seed=bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello_lib/hello_lib.pic.o' -fPIC -iquote . -iquote bazel-out/k8-fastbuild/bin -fno-canonical-system-headers -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c build/toolchains/compilation_tests/hello_lib.cc -o bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello_lib/hello_lib.pic.o)
+SUBCOMMAND: # //build/toolchains/compilation_tests:hello_c [action 'Compiling build/toolchains/compilation_tests/hello.c', configuration: fdf5b52dcec645a88a1ca5ac3b099921e9a82b373c7c33cb77426f4366a12bdc, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -MD -MF bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello_c/hello.pic.d '-frandom-seed=bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello_c/hello.pic.o' -fPIC -iquote . -iquote bazel-out/k8-fastbuild/bin -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -fno-canonical-system-headers -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c build/toolchains/compilation_tests/hello.c -o bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello_c/hello.pic.o)
+SUBCOMMAND: # //build/toolchains/compilation_tests:hello [action 'Compiling build/toolchains/compilation_tests/hello_main.cc', configuration: fdf5b52dcec645a88a1ca5ac3b099921e9a82b373c7c33cb77426f4366a12bdc, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer '-std=c++0x' -MD -MF bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello/hello_main.pic.d '-frandom-seed=bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello/hello_main.pic.o' -fPIC -iquote . -iquote bazel-out/k8-fastbuild/bin -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -fno-canonical-system-headers -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c build/toolchains/compilation_tests/hello_main.cc -o bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/_objs/hello/hello_main.pic.o)
+SUBCOMMAND: # @rules_rust//util/process_wrapper:process_wrapper [action 'Compiling util/process_wrapper/process_wrapper.cc', configuration: bcd8854ceb32e13d45914db5f5797b1d2d30ac011481082021bc78935802aade, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections -fdata-sections '-std=c++0x' -MD -MF bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/process_wrapper.d '-frandom-seed=bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/process_wrapper.o' -iquote external/rules_rust -iquote bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust -iquote external/bazel_tools -iquote bazel-out/k8-opt-exec-2B5CBBC6/bin/external/bazel_tools -g0 -g0 -fno-canonical-system-headers -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/rules_rust/util/process_wrapper/process_wrapper.cc -o bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/process_wrapper.o)
+SUBCOMMAND: # @rules_rust//util/process_wrapper:process_wrapper [action 'Compiling util/process_wrapper/utils.cc', configuration: bcd8854ceb32e13d45914db5f5797b1d2d30ac011481082021bc78935802aade, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections -fdata-sections '-std=c++0x' -MD -MF bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/utils.d '-frandom-seed=bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/utils.o' -iquote external/rules_rust -iquote bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust -iquote external/bazel_tools -iquote bazel-out/k8-opt-exec-2B5CBBC6/bin/external/bazel_tools -g0 -g0 -fno-canonical-system-headers -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/rules_rust/util/process_wrapper/utils.cc -o bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/utils.o)
+SUBCOMMAND: # @rules_rust//util/process_wrapper:process_wrapper [action 'Compiling util/process_wrapper/system_posix.cc', configuration: bcd8854ceb32e13d45914db5f5797b1d2d30ac011481082021bc78935802aade, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections -fdata-sections '-std=c++0x' -MD -MF bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/system_posix.d '-frandom-seed=bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/system_posix.o' -iquote external/rules_rust -iquote bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust -iquote external/bazel_tools -iquote bazel-out/k8-opt-exec-2B5CBBC6/bin/external/bazel_tools -g0 -g0 -fno-canonical-system-headers -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/rules_rust/util/process_wrapper/system_posix.cc -o bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/_objs/process_wrapper/system_posix.o)
+SUBCOMMAND: # //build/toolchains/compilation_tests:hello_c [action 'Linking build/toolchains/compilation_tests/hello_c', configuration: fdf5b52dcec645a88a1ca5ac3b099921e9a82b373c7c33cb77426f4366a12bdc, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc @bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/hello_c-2.params)
+SUBCOMMAND: # //build/toolchains/compilation_tests:hello_lib [action 'Linking build/toolchains/compilation_tests/libhello_lib.so', configuration: fdf5b52dcec645a88a1ca5ac3b099921e9a82b373c7c33cb77426f4366a12bdc, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc @bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/libhello_lib.so-2.params)
+SUBCOMMAND: # //build/toolchains/compilation_tests:hello_lib [action 'Linking build/toolchains/compilation_tests/libhello_lib.a', configuration: fdf5b52dcec645a88a1ca5ac3b099921e9a82b373c7c33cb77426f4366a12bdc, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/ar @bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/libhello_lib.a-2.params)
+SUBCOMMAND: # //build/toolchains/compilation_tests:hello [action 'Linking build/toolchains/compilation_tests/hello', configuration: fdf5b52dcec645a88a1ca5ac3b099921e9a82b373c7c33cb77426f4366a12bdc, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc @bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/hello-2.params)
+SUBCOMMAND: # @rules_rust//util/process_wrapper:process_wrapper [action 'Linking external/rules_rust/util/process_wrapper/process_wrapper', configuration: bcd8854ceb32e13d45914db5f5797b1d2d30ac011481082021bc78935802aade, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    PATH=/bin:/usr/bin:/usr/local/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc @bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/process_wrapper-2.params)
+SUBCOMMAND: # //build/toolchains/compilation_tests:hello_rs [action 'Compiling Rust bin hello_rs (1 files)', configuration: fdf5b52dcec645a88a1ca5ac3b099921e9a82b373c7c33cb77426f4366a12bdc, execution platform: @local_config_platform//:host]
+(cd /home/photex/.cache/bazel/_bazel_photex/44cbb281fd1fa00427ac3e9c8eeccd6f/execroot/avp && \
+  exec env - \
+    CARGO_CFG_TARGET_ARCH=x86_64 \
+    CARGO_CFG_TARGET_OS=linux \
+    CARGO_CRATE_NAME=hello_rs \
+    CARGO_MANIFEST_DIR='${pwd}/build/toolchains/compilation_tests' \
+    CARGO_PKG_AUTHORS='' \
+    CARGO_PKG_DESCRIPTION='' \
+    CARGO_PKG_HOMEPAGE='' \
+    CARGO_PKG_NAME=hello_rs \
+    CARGO_PKG_VERSION=0.0.0 \
+    CARGO_PKG_VERSION_MAJOR=0 \
+    CARGO_PKG_VERSION_MINOR=0 \
+    CARGO_PKG_VERSION_PATCH=0 \
+    CARGO_PKG_VERSION_PRE='' \
+    SYSROOT=../rust_linux_x86_64/lib/rustlib/x86_64-unknown-linux-gnu/lib \
+  bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/process_wrapper --subst 'pwd=${pwd}' -- external/rust_linux_x86_64/bin/rustc build/toolchains/compilation_tests/hello_main.rs '--crate-name=hello_rs' '--crate-type=bin' '--error-format=human' '--codegen=metadata=' '--out-dir=bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests' '--codegen=extra-filename=' '--codegen=opt-level=0' '--codegen=debuginfo=0' '--remap-path-prefix=${pwd}=.' '--emit=dep-info,link' '--color=always' '--target=x86_64-unknown-linux-gnu' -L external/rust_linux_x86_64/lib/rustlib/x86_64-unknown-linux-gnu/lib '--edition=2018' '--codegen=linker=/usr/bin/gcc' --codegen 'link-args=-fuse-ld=gold -Wl,-no-as-needed -Wl,-z,relro,-z,now -B/usr/bin -pass-exit-codes -lstdc++ -lm' -C 'link-arg=bazel-out/k8-fastbuild/bin/build/toolchains/compilation_tests/libhello_lib.a')
+INFO: Elapsed time: 0.861s, Critical Path: 0.64s
+INFO: 27 processes: 15 internal, 12 linux-sandbox.
+INFO: Build completed successfully, 27 total actions
+INFO: Build completed successfully, 27 total actions

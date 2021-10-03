@@ -48,3 +48,4 @@ http_archive(
 
 load("//build:toolchains.bzl", "register_all_toolchains")
 register_all_toolchains()
+
